@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatorConnection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CreatorConnection</h1>
+        <p>Connect. Collaborate. Create.</p>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <h2>Create Your Professional Profile</h2>
+            <p>
+                Join a community where creators, brands, and businesses
+                connect and collaborate.
+            </p>
+
+            <form id="profileForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="userType">I am a</label>
+                <select id="userType" required>
+                    <option value="">Select your role</option>
+                    <option value="Creator">Creator</option>
+                    <option value="Brand">Brand</option>
+                    <option value="Business">Business</option>
+                </select>
+
+                <label for="skills">Skills or Services</label>
+                <input type="text" id="skills" placeholder="e.g. Graphic Design">
+
+                <label for="bio">About Me</label>
+                <textarea id="bio" placeholder="Tell us about yourself"></textarea>
+
+                <label for="interests">Collaboration Interests</label>
+                <input type="text" id="interests" placeholder="e.g. Sponsorships">
+
+                <button type="submit">Create Profile</button>
+            </form>
+
+            <div id="profileResult"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CreatorConnection</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
